@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'LightPixel';
+    src: url('LightPixel.ttf');
+} 
+
+body {
+    /* background-color: black; */
+    background-image: url('../img/space.png');
+    background-size: cover;
+    font-family: 'LightPixel';
+    font-size: 37px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: -2.5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤚</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+h1 {
+    font-size: 45px;
+    transition:1s;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+button {
+    background: #192194;
+    border: 2px solid rgb(0, 0, 0);
+    outline: 2px solid #ffffff;
+    /* border: solid; */
+    /* border-color: #ffffff; */
+    border-radius: 6%;
+    padding: 8px;
+    margin: 0px;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    font-family: 'LightPixel';
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: -2.5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #222453, #302989);
+    transition: 700ms;
+}
+
+table {
+    background:  #ffffff;
+    border-radius: 2%;
+}
+
+td {
+    min-width:52px;
+    background: #192194;
+    border: solid;
+    border-color: black;
+    border-radius: 6%;
+    padding: 4px;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+td:hover {
+    background: linear-gradient(45deg, #222453, #302989);
+    transition: 500ms;
+}
+
+.marked {
+    background: linear-gradient(45deg, #6f6e6e, #686868);
+    transition: 200ms;
+}
+
+.marked:hover {
+    background: linear-gradient(45deg, #616161, #585858);
+    transition: 500ms;
+}
+
+.finished {
+    background: #00FF24;
+    transition: 200ms;
+}
+
+.finished:hover {
+    background: #14a527;
+    transition: 200ms;
+}
+
+.clicked {
+    background: linear-gradient(45deg, #2b2b2b, #0e0e0e);
+    transition: 200ms;
+}
+
+.clicked:hover {
+    background: linear-gradient(45deg, #2b2b2b, #0e0e0e);
+    transition: 200ms;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+}
+
+.timer {
+    font-size: 25px;
+    padding: 30px;
+    transition: 2s;
+}
+
+.easy {
+    font-size: 37px;
+}
+
+.normal {
+    font-size: 29px;
+}
+
+.hard {
+    font-size: 23px;
+}
+
+.blink_me {
+    animation: blinker 1.4s linear infinite;
+    transition: 2s;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Numbers Game</title>
+    <link rel="stylesheet" href="css/touch-nums.css">
+</head>
+<body onload="onInit()">
+    <h1 class="blink_me rainbow-text" onclick = "location.reload()">
+        <span style="color:#FF0000">T</span><span style="color:#FF6D00">H</span><span style="color:#FFDB00">E</span> 
+        <span style="color:#B6FF00">N</span><span style="color:#49FF00">U</span><span style="color:#00FF24">M</span><span style="color:#00FF92">B</span><span style="color:#00FFFF">E</span><span style="color:#0092FF">R</span><span style="color:#0024FF">S</span> 
+        <span style="color:#4900FF">G</span><span style="color:#B600FF">A</span><span style="color:#FF00DB">M</span><span style="color:#FF006D">E</span>
+    </h1>
+    <div><button onclick="onButtonClicked(this, 16, 'easy')">EASY</button>
+        <button onclick="onButtonClicked(this, 25, 'normal')">NORMAL</button>
+        <button onclick="onButtonClicked(this, 36, 'hard')">HARD</button>
+    </div>
+    <div class="timer blink_me">
+        00 : 00 : 000
+     </div>
+    <div class="center-screen">       
+        <table class="board">
+        </table>
+    <div>
+    <script src="js/touch-nums.js"></script>  
+</body>
+</html>
